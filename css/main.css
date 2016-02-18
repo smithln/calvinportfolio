@@ -291,6 +291,38 @@ a:focus {
 	margin: 10px 0;
 }
 
+.roster {
+	font-family: Georgia, serif;
+	font-size: 2em;
+	position: relative;
+	z-index: 1000;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 75vh;
+	margin: 0 0 3em;
+	padding: 3em;
+	text-align: center;
+	color: #fff;
+	background: #005596;
+	cursor: default;
+}
+.roster h2 {
+	font-size: 2.5em;
+}
+footer {
+
+}
+footer div.info {
+	display: block;
+	width: 30%; 
+}
+
 @media(max-width: 720px) {
 	.header-title {
 		font-size: 1.5em;

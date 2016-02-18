@@ -6,8 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>JOH Trans-America 2015</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" >
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
   <body>
@@ -118,7 +121,7 @@
               <figcaption>TKTKTK</figcaption>
             </figure>
             <p>It’s about those times when we get of the bikes and just look out at a piece of scenery so breathtaking that no one says a word. Then, one guy turns away to wipe his eyes with his forearm and says, “Let’s get back on the bikes, fellas.”</p>
-            <figure>
+            <figure id="imageBlock">
               <img class="js-image" data-pos="0.25" src="img/capitolGrounds.jpg" />
               <figcaption>TKTKTK</figcaption>
             </figure>
@@ -129,18 +132,37 @@
           <section class="js-section" data-stay="true" data-zoom-start="0.8"></section>
       </div>
       <footer>
-        <div class="">
-
+        <div class="roster">
+          <h3>Team Members</h3>
+          <p>
+            Beau Samples | Matthew Bryant | Evan Cameo | Kyle Hees | Torin Kellet | Josh Mensinger | Chanse Scott | Joseph Smith | Francis Ahrens | Kevin Baldwin | Michael Batres | Joel Blankenship | Conner Brown | Steven Dibble | Alex Emeigh | Jack Gaskins | Joe Graham | Deshe Gully | Justin Hall | Chris Heggenberger | Shawn Heikens | Benjamin Hook | Calvin Layman | Jonathan Matheny | Gabe Miranda | Matthew Mozzo | William Riley | Scott Snodgrass
+          </p>
         </div>
-        <div class="">
-
-        </div>
-        <div class="">
-
-        </div>
+        <div>
+          <div class="info">
+            <a href="http://www.abilityexperience.org/pushcontent.aspx?id=351">Learn about Journey of Hope</a>
+          </div>
+          <div class="info">
+            <a href="http://support.abilityexperience.org/site/TR/Events/General?pg=pfind&fr_id=1620">Support a Team Member</a>
+          </div>
+          <div class="info">
+            <a href="#">Image Gallery</a>
+          </div>
+          </div>
       </footer>
     </div>
 <!-- Main JS -->
-    <script src="../dist/app.js"></script>
+    <script>
+	$(window).scroll(function() {
+		$('#imageBlock').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+</script>
   </body>
 </html>
