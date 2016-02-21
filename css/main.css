@@ -106,13 +106,6 @@ a:hover, a:focus, a:visited {
 	letter-spacing: 4px;
 	text-transform: uppercase;
 }
-
-.header-title__part::before,
-.header-title__part::after {
-	content: '\2014';
-	padding: 0 0.5em;
-}
-
 .header-title__sub {
 	font-size: 0.8em;
 	font-weight: normal;
