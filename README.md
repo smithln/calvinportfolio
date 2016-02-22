@@ -1,3 +1,3 @@
-# calvinportfolio
+# JOH15
 
-This will help to put the site online
+This is a great website!
